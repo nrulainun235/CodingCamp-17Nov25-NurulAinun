@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurul Ainun - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div id="gate-modal" class="gate-modal" role="dialog" aria-modal="true" aria-labelledby="gate-title" aria-hidden="true">
+        <div class="gate-card" role="document">
+            <h2 id="gate-title">Selamat Datang 👋</h2>
+            <p>Masukkan nama Anda untuk melanjutkan dan melihat website ini.</p>
+            
+            <form id="gate-form" novalidate>
+                <label for="visitor-name" class="visually-hidden">Nama</label>
+                <input id="visitor-name" name="name" type="text" placeholder="Masukkan nama kamu..." autocomplete="name" required />
+                <div class="gate-actions">
+                    <button type="submit" id="gate-submit">Masuk</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="nav-left">
+                <h1>MyPortofolio</h1>
+            </div>
+            <div class="nav-right">
+                <a href="#home">Home</a>
+                <a href="#profile">Our Profile</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Message Us</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero fade-in" id="home">
+        <div class="container">
+            <img src="assets/home.jpg" alt="Foto Profil">
+            <h2>Frontend Developer & UI/UX Enthusiast</h2>
+            <p>
+                Halo! Saya <strong>Nurul Ainun</strong> 👋 <br>
+                Saya suka membuat website yang tidak hanya terlihat menarik, tetapi juga mudah digunakan. 
+                Fokus saya adalah menciptakan pengalaman digital yang responsif, sederhana, dan menyenangkan
+                dengan menggabungkan desain UI/UX dan pengembangan frontend.
+            </p>
+            <div class="social-icons">
+                <a href="https://github.com/nrulainun235"><i class="ri-github-fill"></i></a>
+                <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://www.instagram.com/_nurlainun_?igsh=MXE5MWEwaHIwc2U4aQ=="><i class="ri-instagram-fill"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="profile-section fade-in" id="profile">
+        <div class="container">
+            <h2 class="section-title">Our Profile</h2>
+            
+            <div class="profile-wrapper">
+                
+                <div class="profile-image">
+                    <img src="assets/profile.jpg" alt="Foto Profil">
+                </div>
+                
+                <div class="profile-content">
+                    
+                    <p class="intro">
+                        Saya seorang <strong>Frontend Developer</strong> yang fokus membangun
+                        website modern, responsif, dan user-friendly. Saya tertarik pada UI/UX,
+                        desain clean, dan pengalaman pengguna yang nyaman.
+                    </p>
+                    
+                    <h3>Experience</h3>
+                    <ul class="profile-list">
+                        <li>Frontend Contributor — Educational Web App Project (2024)</li>
+                        <li>Self-Directed Learning — Online Resources</li>
+                        <li>Mini freelance project untuk latihan (ongoing)</li>
+                    </ul>
+                    
+                    <h3>Education</h3>
+                    <ul class="profile-list">
+                        <li>Mahasiswa Sistem Informasi — Universitas Terbuka</li>
+                    </ul>
+                    
+                    <h3>Skills</h3>
+                    <div class="skills-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Tailwind CSS</span>
+                        <span>UI/UX (Figma)</span>
+                        <span>Git & GitHub</span>
+                    </div>
+                    
+                    <h3>Tools</h3>
+                    <div class="tools-tags">
+                        <span>VS Code</span>
+                        <span>Figma</span>
+                        <span>Chrome DevTools</span>
+                        <span>GitHub Desktop</span>
+                    </div>
+                    
+                    <h3>Currently Learning</h3>
+                    <p> Laravel & UI Modern Layouting.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects fade-in" id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card fade-in">
+                    <img src="assets/mini_web.png" alt="Project 1">
+                    <h3>Mini Website </h3>
+                    <p>Website modern responsive, latihan HTML & CSS dengan desain clean dan interaktif.</p>
+                </div>
+                <div class="project-card fade-in">
+                    <img src="assets/mini_app.png" alt="Project 2">
+                    <h3>Mini App </h3>
+                    <p>Aplikasi interaktif berbasis JS dengan antarmuka yang intuitif dan menarik.</p>
+                </div>
+                <div class="project-card fade-in">
+                    <img src="assets/ui_mokup.jpg" alt="Project 3">
+                    <h3>UI Mockup </h3>
+                    <p>Mockup aplikasi dekstop, fokus pada UX flow yang efisien dan estetika visual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact fade-in" id="contact">
+        <div class="container">
+            <h2>Message Us</h2>
+            <p>Silakan kirim pesan atau pertanyaan melalui form di bawah ini.</p>
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message <i class="ri-send-plane-fill"></i></button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            &copy; 2025 Nurul Ainun. All rights reserved.
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
